@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Obstacles>
+	<Obstacle>
+		<Point x="-20" y="3"/>
+		<Point x="20" y="3"/>
+		<Point x="21" y="3"/>
+		<Point x="21" y="3"/>
+	</Obstacle>
+	<Obstacle>
+		<Point x="-20" y="-3"/>
+		<Point x="20" y="-3"/>
+		<Point x="21" y="-3"/>
+		<Point x="21" y="-3"/>
+	</Obstacle>
+</Obstacles>

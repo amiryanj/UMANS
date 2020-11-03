@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Agents>
+    <Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+      <pos x="-5" y="0"/>
+      <goal x="5" y="0"/>
+      <Policy id="0"/>
+    </Agent>
+    <Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+      <pos x="0" y="5"/>
+      <goal x="0" y="-5"/>
+      <Policy id="0"/>
+    </Agent>
+</Agents>

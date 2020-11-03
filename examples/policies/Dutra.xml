@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="gradient">
+		<costfunction coeff="20" range="5" name="TtcaDca" sigmaTtca="1" sigmaDca="0.3" sigmaAngle_goal="2" sigmaSpeed_goal="2" />
+	</Policy>
+</Policies>

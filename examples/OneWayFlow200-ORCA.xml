@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Simulation delta_time="0.1" end_time="200">
+	<World type="Toric" width="60" height="60" />
+	<Policies file="policies/ORCA.xml" />
+	<Agents file="agents/OneWayFlow200.xml" />
+</Simulation>

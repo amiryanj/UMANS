@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="sampling" SamplingType="random" SamplingBase="current velocity" SamplingBaseDirection="unit" SamplingAngle="360" RandomSamples="250" SamplingRadius="maximum acceleration" RelaxationTime="0">
+		<costfunction range="5" name="RVO" />
+	</Policy>
+</Policies>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="sampling" SamplingType="regular" SamplingBase="zero" SamplingBaseDirection="preferred velocity" SamplingAngle="180" SpeedSamples="2" AngleSamples="19" SamplingRadius="preferred speed" RelaxationTime="0.25">
+		<costfunction range="5" name="VanToll" />
+	</Policy>
+</Policies>    

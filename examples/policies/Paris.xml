@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="sampling" SamplingType="regular" SamplingBase="zero" SamplingBaseDirection="unit" SamplingAngle="360" SpeedSamples="4" AngleSamples="36" SamplingRadius="maximum speed" RelaxationTime="0">
+		<costfunction range="5" name="Paris"/>
+	</Policy>
+</Policies>

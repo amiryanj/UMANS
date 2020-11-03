@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Agents>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="7.5" y="0"/>
+		<goal x="-7.5" y="0"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="7.44086" y="0.939999"/>
+		<goal x="-7.44086" y="-0.939999"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="7.26437" y="1.86517"/>
+		<goal x="-7.26437" y="-1.86517"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.97332" y="2.76093"/>
+		<goal x="-6.97332" y="-2.76093"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.5723" y="3.61315"/>
+		<goal x="-6.5723" y="-3.61315"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.06763" y="4.40839"/>
+		<goal x="-6.06763" y="-4.40839"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="5.46726" y="5.1341"/>
+		<goal x="-5.46726" y="-5.1341"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="4.78068" y="5.77885"/>
+		<goal x="-4.78068" y="-5.77885"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="4.0187" y="6.33246"/>
+		<goal x="-4.0187" y="-6.33246"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="3.19334" y="6.7862"/>
+		<goal x="-3.19334" y="-6.7862"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="2.31763" y="7.13292"/>
+		<goal x="-2.31763" y="-7.13292"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="1.40536" y="7.36715"/>
+		<goal x="-1.40536" y="-7.36715"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="0.470929" y="7.4852"/>
+		<goal x="-0.470929" y="-7.4852"/>
+		<Policy id="0"/>
+	</Agent>
+	
+	
+	
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-7.5" y="0"/>
+		<goal x="7.5" y="0"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-7.44086" y="0.939999"/>
+		<goal x="7.44086" y="-0.939999"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-7.26437" y="1.86517"/>
+		<goal x="7.26437" y="-1.86517"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.97332" y="2.76093"/>
+		<goal x="6.97332" y="-2.76093"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.5723" y="3.61315"/>
+		<goal x="6.5723" y="-3.61315"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.06763" y="4.40839"/>
+		<goal x="6.06763" y="-4.40839"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-5.46726" y="5.1341"/>
+		<goal x="5.46726" y="-5.1341"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-4.78068" y="5.77885"/>
+		<goal x="4.78068" y="-5.77885"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-4.0187" y="6.33246"/>
+		<goal x="4.0187" y="-6.33246"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-3.19334" y="6.7862"/>
+		<goal x="3.19334" y="-6.7862"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-2.31763" y="7.13292"/>
+		<goal x="2.31763" y="-7.13292"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-1.40536" y="7.36715"/>
+		<goal x="1.40536" y="-7.36715"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-0.470929" y="7.4852"/>
+		<goal x="0.470929" y="-7.4852"/>
+		<Policy id="0"/>
+	</Agent>
+	
+	
+	
+	
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="7.44086" y="-0.939999"/>
+		<goal x="-7.44086" y="0.939999"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="7.26437" y="-1.86517"/>
+		<goal x="-7.26437" y="1.86517"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.97332" y="-2.76093"/>
+		<goal x="-6.97332" y="2.76093"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.5723" y="-3.61315"/>
+		<goal x="-6.5723" y="3.61315"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="6.06763" y="-4.40839"/>
+		<goal x="-6.06763" y="4.40839"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="5.46726" y="-5.1341"/>
+		<goal x="-5.46726" y="5.1341"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="4.78068" y="-5.77885"/>
+		<goal x="-4.78068" y="5.77885"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="4.0187" y="-6.33246"/>
+		<goal x="-4.0187" y="6.33246"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="3.19334" y="-6.7862"/>
+		<goal x="-3.19334" y="6.7862"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="2.31763" y="-7.13292"/>
+		<goal x="-2.31763" y="7.13292"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="1.40536" y="-7.36715"/>
+		<goal x="-1.40536" y="7.36715"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="0.470929" y="-7.4852"/>
+		<goal x="-0.470929" y="7.4852"/>
+		<Policy id="0"/>
+	</Agent>
+	
+	
+	
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-7.44086" y="-0.939999"/>
+		<goal x="7.44086" y="0.939999"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-7.26437" y="-1.86517"/>
+		<goal x="7.26437" y="1.86517"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.97332" y="-2.76093"/>
+		<goal x="6.97332" y="2.76093"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.5723" y="-3.61315"/>
+		<goal x="6.5723" y="3.61315"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-6.06763" y="-4.40839"/>
+		<goal x="6.06763" y="4.40839"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-5.46726" y="-5.1341"/>
+		<goal x="5.46726" y="5.1341"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-4.78068" y="-5.77885"/>
+		<goal x="4.78068" y="5.77885"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-4.0187" y="-6.33246"/>
+		<goal x="4.0187" y="6.33246"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-3.19334" y="-6.7862"/>
+		<goal x="3.19334" y="6.7862"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-2.31763" y="-7.13292"/>
+		<goal x="2.31763" y="7.13292"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-1.40536" y="-7.36715"/>
+		<goal x="1.40536" y="7.36715"/>
+		<Policy id="0"/>
+	</Agent>
+	<Agent rad="0.3" pref_speed="1.3" max_speed="1.6">
+		<pos x="-0.470929" y="-7.4852"/>
+		<goal x="0.470929" y="7.4852"/>
+		<Policy id="0"/>
+	</Agent>
+</Agents>

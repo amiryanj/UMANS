@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="global" RelaxationTime="0">
+		<costfunction range="5" name="ORCA" />
+	</Policy>
+</Policies>

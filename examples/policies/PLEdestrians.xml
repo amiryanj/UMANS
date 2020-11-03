@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="sampling" SamplingType="regular" SamplingBase="zero" SamplingBaseDirection="unit" SamplingAngle="360" SpeedSamples="4" AngleSamples="36" SamplingRadius="maximum speed" RelaxationTime="0.5">
+		<costfunction range="5" name="PLEdestrians" t_min="0.5" t_max="3" />
+	</Policy>
+</Policies>    

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<Policy id="0" OptimizationMethod="gradient" RelaxationTime="0.5">
+		<costfunction range="5" name="PowerLaw" />
+		<costfunction name="GoalReachingForce" />
+	</Policy>
+</Policies>

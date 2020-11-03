@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Application</class>
+ <widget class="QWidget" name="Application">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UMANS: Unified Microscopic Agent Navigation Simulator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="UMANSQtGuiApplication.qrc">
+    <normaloff>:/GUI/Resources/ApplicationIcon.png</normaloff>:/GUI/Resources/ApplicationIcon.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="UMANSOpenGLWidget" name="SimulationView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="SettingsPanel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QGroupBox" name="Group_Playback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>231</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Playback</string>
+      </property>
+      <widget class="QPushButton" name="Button_Play">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Play/resume the simulation.</string>
+       </property>
+       <property name="text">
+        <string>Play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Button_Pause">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>90</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Pause the simulation.</string>
+       </property>
+       <property name="text">
+        <string>Pause</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Title_Speed">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Desired speed (x real-time)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Title_SimulationTime">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Current simulation time</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SimulationTime">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>22</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>The time (in seconds) that has passed in the simulation.</string>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #6699FF;</string>
+       </property>
+       <property name="text">
+        <string>00:00.000</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QSlider" name="Slider_Speed">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>211</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>The speed-up factor used for running/showing the simulation. Use 1 to run in real-time.</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10</number>
+       </property>
+       <property name="pageStep">
+        <number>1</number>
+       </property>
+       <property name="sliderPosition">
+        <number>1</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBelow</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SpeedSlider_A">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SpeedSlider_D">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>190</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>10</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SpeedSlider_B">
+       <property name="geometry">
+        <rect>
+         <x>66</x>
+         <y>190</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SpeedSlider_C">
+       <property name="geometry">
+        <rect>
+         <x>133</x>
+         <y>190</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Button_Reset">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>90</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Reset the simulation.</string>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Group_Input">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>231</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Simulation input and output</string>
+      </property>
+      <widget class="QPushButton" name="Button_LoadScenario">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Load an XML file with agents to insert into the simulation.</string>
+       </property>
+       <property name="text">
+        <string>Load scenario (.xml)...</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="CheckBox_ToggleScreenshots">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>221</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>If enabled, the program saves a screenshot of each frame.</string>
+       </property>
+       <property name="text">
+        <string>Make screenshots of frames</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Group_Visualization">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Visualization</string>
+      </property>
+      <widget class="QPushButton" name="Button_ZoomToDefault">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Reset the zoom/pan to a default state.</string>
+       </property>
+       <property name="text">
+        <string>Zoom to default scale</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="CheckBox_ToggleGrid">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>221</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Show or hide a grid that helps understand the size of the environment.</string>
+       </property>
+       <property name="text">
+        <string>Show grid with 1x1 m cells</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Group_Controls">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>660</y>
+        <width>231</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Controls</string>
+      </property>
+      <widget class="QLabel" name="Label_AddAgent">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Left click:&lt;/span&gt;&amp;nbsp;&amp;nbsp;Add agent&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_SelectAgent">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;i&gt;Shift + Left click:&lt;/i&gt;&amp;nbsp;&amp;nbsp;Select agent</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_AddPointToRoute">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;i&gt;Right click:&lt;/i&gt;&amp;nbsp;&amp;nbsp;Set goal</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_Pan">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;i&gt;Scroll wheel:&lt;/i&gt;&amp;nbsp;&amp;nbsp;Zoom in/out</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_RemoveAgent">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;i&gt;Del:&lt;/i&gt;&amp;nbsp;&amp;nbsp;Remove agent</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Header_AgentSelected">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>211</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;When an agent is selected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Header_General">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;General&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_Pause">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>211</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Spacebar:&lt;/span&gt;&amp;nbsp;&amp;nbsp;Pause/Resume&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label_Pan_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;i&gt;Middle mouse btn + Drag:&lt;/i&gt;&amp;nbsp;&amp;nbsp;Pan</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="Logo_UMANS">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>231</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="UMANSQtGuiApplication.qrc">:/GUI/Resources/ApplicationLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Logo_Inria">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>886</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="UMANSQtGuiApplication.qrc">:/GUI/Resources/InriaLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="CheckBox_ToggleCSVOutput">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>221</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Whether to write the trajectories of agents to CSV files.</string>
+      </property>
+      <property name="text">
+       <string>Write output to CSV files</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>UMANSOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>UMANSOpenGLWidget.h</header>
+   <slots>
+    <signal>SimulationTimeChanged(QString)</signal>
+    <slot>PlaySimulation()</slot>
+    <slot>PauseSimulation()</slot>
+    <slot>ResetSimulation()</slot>
+    <slot>SetPlaybackMultiplier(int)</slot>
+    <slot>OpenScenarioFileDialog()</slot>
+    <slot>ToggleCSVOutput()</slot>
+    <slot>ZoomToFit()</slot>
+    <slot>ToggleScreenshots()</slot>
+    <slot>ToggleGrid()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>Button_LoadScenario</tabstop>
+  <tabstop>Button_Play</tabstop>
+  <tabstop>Button_Pause</tabstop>
+  <tabstop>Button_Reset</tabstop>
+  <tabstop>Slider_Speed</tabstop>
+  <tabstop>CheckBox_ToggleGrid</tabstop>
+  <tabstop>Button_ZoomToDefault</tabstop>
+ </tabstops>
+ <resources>
+  <include location="UMANSQtGuiApplication.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Button_Play</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>PlaySimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1030</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_Pause</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>PauseSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1110</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Slider_Speed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SimulationView</receiver>
+   <slot>SetPlaybackMultiplier(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1180</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_ZoomToDefault</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>ZoomToFit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1180</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>674</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_LoadScenario</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>OpenScenarioFileDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1180</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>798</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_Reset</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>ResetSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1180</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>782</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckBox_ToggleGrid</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>ToggleGrid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1190</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>949</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckBox_ToggleCSVOutput</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>ToggleCSVOutput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1009</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>925</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckBox_ToggleScreenshots</sender>
+   <signal>clicked()</signal>
+   <receiver>SimulationView</receiver>
+   <slot>ToggleScreenshots()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>978</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>889</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

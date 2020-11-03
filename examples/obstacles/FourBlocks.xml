@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Obstacles>
+	<Obstacle>
+		<Point x="-2.5" y="-2.5"/>
+		<Point x="-0.5" y="-2.5"/>
+		<Point x="-0.5" y="-0.5"/>
+		<Point x="-2.5" y="-0.5"/>
+	</Obstacle>
+	<Obstacle>
+		<Point x="0.5" y="-2.5"/>
+		<Point x="2.5" y="-2.5"/>
+		<Point x="2.5" y="-0.5"/>
+		<Point x="0.5" y="-0.5"/>
+	</Obstacle>
+	<Obstacle>
+		<Point x="-2.5" y="0.5"/>
+		<Point x="-0.5" y="0.5"/>
+		<Point x="-0.5" y="2.5"/>
+		<Point x="-2.5" y="2.5"/>
+	</Obstacle>
+	<Obstacle>
+		<Point x="0.5" y="0.5"/>
+		<Point x="2.5" y="0.5"/>
+		<Point x="2.5" y="2.5"/>
+		<Point x="0.5" y="2.5"/>
+	</Obstacle>
+</Obstacles>
